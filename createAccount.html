@@ -40,11 +40,13 @@
     </style>
     <title>Product</title>
   </head>
-  <body style="font-family: Roboto; overflow-x: hidden">
+  <body style="font-family: Roboto">
     <header class="border-4 border-bottom">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand fw-semibold" href="index.html">Simple header</a>
+          <a class="navbar-brand fw-semibold" href="landingPage.html"
+            >Simple header</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -67,7 +69,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="index.html"
+                  href="landingPage.html"
                   >Home</a
                 >
               </li>
@@ -102,18 +104,20 @@
       <div class="mt-5" style="max-width: 520px; width: 100%">
         <h2 class="ms-1 fw-semibold fs-4">Detail Form</h2>
         <form class="needs-validation mt-3" novalidate>
-          <div class="d-flex gap-2 justify-content-between">
+          <div
+            class="d-flex gap-2 justify-content-between flex-column flex-sm-row"
+          >
             <div>
               <label for="name" class="form-label">First Name</label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="first-name"
+                id="first-name"
                 minlength="6"
                 maxlength="50"
                 required
                 class="rounded-2 border-2 form-control"
-                style="width: 240px"
+                style="width: 240px; min-width: 100%"
               />
               <div class="valid-feedback">Looks good!</div>
               <div class="invalid-feedback">Looks not good!</div>
@@ -122,13 +126,13 @@
               <label for="name" class="form-label">Last Name</label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="last-name"
+                id="last-name"
                 minlength="6"
                 maxlength="50"
                 required
                 class="rounded-2 border-2 form-control"
-                style="width: 240px"
+                style="width: 240px; min-width: 100%"
               />
               <div class="valid-feedback">Looks good!</div>
               <div class="invalid-feedback">Looks not good!</div>
@@ -288,72 +292,77 @@
     <section>
       <div>
         <h1 class="text-center">List Account</h1>
-        <table class="table table-striped table-hover ms-4">
-          <thead>
-            <tr class="border-top">
-              <th scope="col">No</th>
-              <th scope="col">First Name</th>
-              <th scope="col">Last Name</th>
-              <th scope="col">Username</th>
-              <th scope="col">Email</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Addres</th>
-              <th scope="col">Addres 2</th>
-              <th scope="col">Nationality</th>
-              <th scope="col">Language</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1001</th>
-              <td>lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-              <td>adipiscing</td>
-              <td>Elit</td>
-              <td>Elit 2</td>
-              <td>Indonesia</td>
-              <td>Bahasa</td>
-            </tr>
-            <tr>
-              <th scope="row">1002</th>
-              <td>lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-              <td>adipiscing</td>
-              <td>Elit</td>
-              <td>Elit 2</td>
-              <td>Indonesia</td>
-              <td>Bahasa</td>
-            </tr>
-            <tr>
-              <th scope="row">1003</th>
-              <td>lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-              <td>adipiscing</td>
-              <td>Elit</td>
-              <td>Elit 2</td>
-              <td>Indonesia</td>
-              <td>Bahasa</td>
-            </tr>
-            <tr>
-              <th scope="row">1003</th>
-              <td>lorem</td>
-              <td>ipsum</td>
-              <td>dolor</td>
-              <td>sit</td>
-              <td>adipiscing</td>
-              <td>Elit</td>
-              <td>Elit 2</td>
-              <td>Indonesia</td>
-              <td>Bahasa</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table
+            class="table table-striped table-hover ms-4"
+            style="width: 950px; max-width: 100%"
+          >
+            <thead>
+              <tr class="border-top">
+                <th scope="col">No</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Addres</th>
+                <th scope="col">Addres 2</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Language</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1001</th>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>adipiscing</td>
+                <td>Elit</td>
+                <td>Elit 2</td>
+                <td>Indonesia</td>
+                <td>Bahasa</td>
+              </tr>
+              <tr>
+                <th scope="row">1002</th>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>adipiscing</td>
+                <td>Elit</td>
+                <td>Elit 2</td>
+                <td>Indonesia</td>
+                <td>Bahasa</td>
+              </tr>
+              <tr>
+                <th scope="row">1003</th>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>adipiscing</td>
+                <td>Elit</td>
+                <td>Elit 2</td>
+                <td>Indonesia</td>
+                <td>Bahasa</td>
+              </tr>
+              <tr>
+                <th scope="row">1003</th>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>adipiscing</td>
+                <td>Elit</td>
+                <td>Elit 2</td>
+                <td>Indonesia</td>
+                <td>Bahasa</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="ms-4 mb-5">
           <form class="needs-validation" novalidate>
             <input
@@ -364,7 +373,7 @@
               placeholder="Search by Username"
               required
               class="px-2 pe-4 rounded-2 form-control"
-              style="width: 250px;"
+              style="width: 250px"
             />
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Looks not good!</div>
